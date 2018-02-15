@@ -12,12 +12,9 @@
 
   <body>
     <br>
-    <div id="resumeDocument">
-      <a href="resume/Resume.pdf" target='_blank' title="Resume">Download</a>
-    </div>
 
     <div id="resumeEmbed">
-      <img src="resume/Resume.jpg" width="80%" height="100%" />
+        <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=http://mikeoles.com/resume/Resume.pdf" width="100%" height="1000" >
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

@@ -164,19 +164,19 @@
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <div class="appear">
-                <h3>Pennapps Hackathon</h3>
+                <h3>Pennapps Hackathon Competition</h3>
                 <img class="appear" src="img/pennapps.png" alt="Pennapps">
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <div class="appear">
-                <h3>Big Idea Competition Finals</h3>
+                <h3>Big Idea Competition Finalist</h3>
                 <img class="appear" src="img/bigidea.jpg" alt="Randall Big Idea">
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <div class="appear">
-                <h3>SwiftSet Android App</h3>
+                <h3>SwiftSet Android Fitness Application</h3>
                 <img class="appear" src="img/swiftset.jpg" alt="SwiftSet">
               </div>
             </div>

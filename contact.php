@@ -6,10 +6,11 @@
     <meta content="author: Mike Oles">
 
     <title>Contact</title>
-    <link rel="icon" href="./img/icon.png">  
+    <link rel="icon" href="./img/icon.png">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css" />
+    <body background="background2.jpg">
 </head>
 
   <body>
@@ -28,83 +29,81 @@
         </ul>
       </nav>
     </header>
+    <div id="cbp-fbscroller" class="cbp-fbscroller">
+        <section id="fbsection1">
+            <section id="topSection">
+              <h2 id="formTitle">Send Message</h2>
+              <h2 id="altFormTitle">Cancel Message</h2>
+            </section>
 
-    <section id="topSection">
-      <h1 class="name">
-        Contact
-      </h1>
+            <div class="signup-form">
+              <form action="" method="POST" id="signupForm">
 
-      <h2 id="formTitle">Send Message</h2>
-      <h2 id="altFormTitle">Cancel Message</h2>
-    </section>
+                <fieldset>
+                  <p class="warn" id=firstNameError></p>
+                  <h2 class="form=title">Name</h2>
+                  <input type="text" id="name" name="name"><br>
+                </fieldset>
 
-    <div class="signup-form">
-      <form action="" method="POST" id="signupForm">
+                <fieldset>
+                  <p class="warn" id=companyError></p>
+                  <h2 class="form=title">Company</h2>
+                  <input type="text" id="company"><br>
+                </fieldset>
 
-        <fieldset>
-          <p class="warn" id=firstNameError></p>
-          <h2 class="form=title">Name</h2>
-          <input type="text" id="name" name="name"><br>
-        </fieldset>
+                <fieldset>
+                  <p class="warn"id=emailError></p>
+                  <h2 class="form-title">Email</h2>
+                  <input type="email" id="email" name="email">
+                </fieldset>
 
-        <fieldset>
-          <p class="warn" id=companyError></p>
-          <h2 class="form=title">Company</h2>
-          <input type="text" id="company"><br>
-        </fieldset>
+                <fieldset>
+                  <h2 class="form-title">Comment</h2>
+                  <textarea rows="5" cols="50" id="comment" name="comment"></textarea>
+                </fieldset>
 
-        <fieldset>
-          <p class="warn"id=emailError></p>
-          <h2 class="form-title">Email</h2>
-          <input type="email" id="email" name="email">
-        </fieldset>
+                <br>
+                <input type="submit" name="submit" value="Send" class="button">
+                <input type="reset" value="Clear" class="button">
+              </form>
+            </div>
 
-        <fieldset>
-          <h2 class="form-title">Comment</h2>
-          <textarea rows="5" cols="50" id="comment" name="comment"></textarea>
-        </fieldset>
+            <?php
+            if(isset($_POST['submit'])){
+                $to = "oles@live.com";
+                $from = $_POST['email'];
+                $name = $_POST['name'];
+                $subject = "New Website comment";
+                $message = "From: " . $name . "\n\n" . $_POST['comment'];
+                $headers = "From:" . $from;
 
-        <br>
-        <input type="submit" name="submit" value="Send" class="button">
-        <input type="reset" value="Clear" class="button">
-      </form>
+                mail($to,$subject,$message,$headers);
+                echo "Thank You! Message Sent";
+                }
+            ?>
+
+            <section id="contactSection">
+              <h3 class="contactInfo">
+                Email:
+              </h3>
+              <p class="contactInfo">
+                <a href="mailto:mbo10@pitt,edu?Subject=Website%20Contact" target="_top">mbo10@pitt.edu</a>
+              </p>
+              <h3 class="contactInfo">
+                Github:
+              </h3>
+              <p class="contactInfo">
+                <a href="https://github.com/mikeoles" target="_top">GitHub.com/MikeOles</a>
+              </p>
+              <h3 class="contactInfo">
+                LinkedIn:
+              </h3>
+              <p class="contactInfo">
+                <a href="https://linkedin.com/in/mikeoles" target="_top">LinkedIn.com/In/MikeOles</a>
+              </p>
+            </section>
+        </section>
     </div>
-
-    <?php
-    if(isset($_POST['submit'])){
-        $to = "oles@live.com";
-        $from = $_POST['email'];
-        $name = $_POST['name'];
-        $subject = "New Website comment";
-        $message = "From: " . $name . "\n\n" . $_POST['comment'];
-        $headers = "From:" . $from;
-
-        mail($to,$subject,$message,$headers);
-        echo "Thank You! Message Sent";
-        }
-    ?>
-
-    <section id="contactSection">
-      <h3 class="contactInfo">
-        Email:
-      </h3>
-      <p class="contactInfo">
-        <a href="mailto:mbo10@pitt,edu?Subject=Website%20Contact" target="_top">mbo10@pitt.edu</a>
-      </p>
-      <h3 class="contactInfo">
-        Github:
-      </h3>
-      <p class="contactInfo">
-        <a href="https://github.com/mikeoles" target="_top">GitHub.com/MikeOles</a>
-      </p>
-      <h3 class="contactInfo">
-        LinkedIn:
-      </h3>
-      <p class="contactInfo">
-        <a href="https://linkedin.com/in/mikeoles" target="_top">LinkedIn.com/In/MikeOles</a>
-      </p>
-    </section>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </body>
