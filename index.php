@@ -24,7 +24,7 @@
           <div class="col-xs-12 col-sm-6">
             <ul>
               <li><a href="#fbsection1">Main</a></li>
-              <li><a href="contct">Contact</a></li>
+              <li><a href="contact">Contact</a></li>
               <li><a href="#fbsection2">Skills</a></li>
               <li><a href="#experience">Experience</a></li>
             </ul>
@@ -44,7 +44,7 @@
             <div class="col-sm-6 col-xs-12">
               <div id="basicInfo">
                 <p>University of Pitsburgh</p>
-                <p>Graduating Spring 2017</p>
+                <p>Graduated 2017</p>
                 <p>Bachelors In Computer Science </p>
                 <p>Minor In Fitness </p>
               </div>
@@ -52,7 +52,6 @@
               <div id="resumeDocument">
                 <a href="resume.php" target="_blank">View My Resume</a>
               </div>
-
             </div>
           </div>
         </div>
@@ -70,10 +69,12 @@
                   <li><i class="devicon-java-plain colored"></i> Java</li>
                   <li><i class="devicon-c-plain colored"></i> C</li>
                   <li><i class="devicon-cplusplus-plain colored"></i> C++</li>
-                  <li><i class="devicon-jquery-plain colored"></i> JQuery</li>
-                  <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+                  <li><i class="devicon-php-plain colored"></i> PHP</li>
                   <li><i class="devicon-html5-plain colored"></i> HTML</li>
                   <li><i class="devicon-css3-plain colored"></i> CSS</li>
+                  <li><i class="devicon-jquery-plain colored"></i> JQuery</li>
+                  <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+                  <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
                 </ul>
               </section>
             </div>
@@ -82,13 +83,15 @@
               <section id="tools" class="appear">
                 <h2>Tools</h2>
                 <ul>
-                  <li><i class="devicon-git-plain colored"></i> Git</li>
-                  <li><i class="devicon-github-plain colored"></i> GitHub</li>
-                  <li><i class="devicon-bitbucket-plain colored"></i> BitBucket</li>
-                  <li><i class="devicon-php-plain colored"></i> PHP</li>
-                  <li><i class="devicon-android-plain colored"></i> Android</li>
-                  <li><i class="devicon-windows8-plain colored"></i> Windows</li>
-                  <li><i class="devicon-linux-plain colored"></i> Linux</li>
+                    <li><i class="devicon-android-plain colored"></i> Android</li>
+                    <li><i class="devicon-git-plain colored"></i> Git</li>
+                    <li><i class="devicon-github-plain colored"></i> GitHub</li>
+                    <li><i class="devicon-bitbucket-plain colored"></i> BitBucket</li>
+                    <li><i class="devicon-windows8-plain colored"></i> Windows</li>
+                    <li><i class="devicon-linux-plain colored"></i> Linux</li>
+                    <li><i class="devicon-confluence-plain colored"></i> Confluence</li>
+                    <li><i class="devicon-slack-plain colored"></i> Slack</li>
+                    <li><i class="devicon-zend-plain colored"></i> Zend</li>
                 </ul>
               </section>
             </div>
@@ -113,7 +116,7 @@
                 <h2>Concepts</h2>
                 <ul>
                   <?php
-                    $concepts = array("Object Oriented Design", "Data Structures", "Operating Systems", "Memory Allocation", "Recursion", "Searching/Sorting", "Algorithms", "Complexity", "Reflection", "Threading", "Software Testing");
+                    $concepts = array("Object Oriented Design", "Data Structures", "Operating Systems", "Memory Allocation", "Recursion", "Searching/Sorting", "Algorithms", "Complexity", "Reflection", "Threading", "Software Testing", "Agile/Scrum", "Software Development Life Cycle");
                     foreach($concepts as &$value){
                       echo "<li>" . $value . "</li>";
                     }
@@ -129,6 +132,12 @@
         <h2>Experience</h2>
         <div class="container">
           <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="appear">
+                  <h3>Showclix: Production Support Engineering</h3>
+                  <img class="appear" href="https://www.showclix.com/" src="img/showclix.jpg" alt="ShowClix">
+                </div>
+            </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <div class="appear">
                 <h3>Avarint: Software Engineer Intern</h3>
@@ -155,14 +164,20 @@
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <div class="appear">
-                <h3>Pennapps Hackathon 2016</h3>
+                <h3>Pennapps Hackathon</h3>
                 <img class="appear" src="img/pennapps.png" alt="Pennapps">
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <div class="appear">
-                <h3>Big Idea Competition Finalist</h3>
+                <h3>Big Idea Competition Finals</h3>
                 <img class="appear" src="img/bigidea.jpg" alt="Randall Big Idea">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="appear">
+                <h3>SwiftSet Android App</h3>
+                <img class="appear" src="img/swiftset.jpg" alt="SwiftSet">
               </div>
             </div>
           </div>
