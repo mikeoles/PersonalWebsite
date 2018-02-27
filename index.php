@@ -24,7 +24,7 @@
           <div class="col-xs-12 col-sm-6">
             <ul>
               <li><a href="#fbsection1">Main</a></li>
-              <li><a href="contact">Contact</a></li>
+              <li><a href="contact.php">Contact</a></li>
               <li><a href="#fbsection2">Skills</a></li>
               <li><a href="#experience">Experience</a></li>
             </ul>

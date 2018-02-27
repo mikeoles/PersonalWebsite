@@ -68,19 +68,28 @@
               </form>
             </div>
 
-            <?php
-            if(isset($_POST['submit'])){
-                $to = "oles@live.com";
-                $from = $_POST['email'];
-                $name = $_POST['name'];
-                $subject = "New Website comment";
-                $message = "From: " . $name . "\n\n" . $_POST['comment'];
-                $headers = "From:" . $from;
+            <h3 id="messageStatus" class="contactInfo">
+                <?php
+                if(isset($_POST['submit'])){
+                    $to = "oles@live.com";
+                    $from = $_POST['email'];
+                    $name = $_POST['name'];
+                    $subject = "New Website comment";
+                    $message = "From: " . $name . "\n\n" . $_POST['comment'];
+                    $headers = "From:" . $from;
 
-                mail($to,$subject,$message,$headers);
-                echo "Thank You! Message Sent";
+                    mail($to,$subject,$message,$headers);
+                    /*
+                    if(mail($to,$subject,$message,$headers) && strlen($from)>0 && strlen($name)>0){
+                        echo "<script type='text/javascript'>alert('Thank you! Your email has been sent successfully');</script>";
+                    }
+
+                    $from = '';
+                    $name = '';
+                    */
                 }
-            ?>
+                ?>
+            </h3>
 
             <section id="contactSection">
               <h3 class="contactInfo">
