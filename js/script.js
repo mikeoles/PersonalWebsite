@@ -32,10 +32,6 @@ $(document).ready(function(){
 
   $('#altFormTitle').hide();
 
-  $('#altFormTitle').click(function(){
-     $('.messageStatus').hide(); 
-  });
-
   $('#formTitle').click(function(){
     $('.signup-form').slideDown();
   });
